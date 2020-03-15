@@ -96,7 +96,7 @@
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
   <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
-    <main class="wrapper">
+    <main class="wrapper bgblur">
       {{ partial "header.html" . }}
 
       <div class="content">
@@ -105,7 +105,6 @@
 
       {{ partial "footer.html" . }}
     </main>
-
     {{ template "_internal/google_analytics.html" . }}
 
   </body>
