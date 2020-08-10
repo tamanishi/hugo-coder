@@ -168,6 +168,10 @@ img {
   max-width: 100%;
 }
 
+figure {
+  text-align: center;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -230,4 +234,11 @@ img {
 
 .fas {
   font-weight: 900;
+}
+
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 .05em 0 .1em;
+  vertical-align: -0.1em;
 }
