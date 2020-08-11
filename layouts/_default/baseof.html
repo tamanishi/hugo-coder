@@ -100,13 +100,21 @@
         onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
   >
     <main class="wrapper bgblur">
-      {{ partial "header.html" . }}
+      <div class="bgopacity" style="
+        background: rgba(100,100,200,.3);
+        height: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      ">
+        {{ partial "header.html" . }}
 
-      <div class="content">
-        {{ block "content" . }}{{ end }}
+        <div class="content">
+          {{ block "content" . }}{{ end }}
+        </div>
+
+        {{ partial "footer.html" . }}
       </div>
-
-      {{ partial "footer.html" . }}
     </main>
 
     {{ range .Site.Params.custom_js }}

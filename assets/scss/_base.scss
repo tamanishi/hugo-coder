@@ -204,6 +204,14 @@ figure {
   z-index: -1;
 }
 
+.bgopacity {
+  background: rgba(200,200,200,.3);
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   margin: 0 auto;
   max-width: 90.0rem;
