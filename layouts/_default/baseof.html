@@ -115,7 +115,8 @@
       <script src="{{ . | relURL }}"></script>
     {{ end }}
 
-    {{ template "_internal/google_analytics.html" . }}
+    <!-- {{ template "_internal/google_analytics.html" . }} -->
+    {{ partial "analytics/google" . }}
 
     {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
       {{- partial "analytics/fathom" . -}}
