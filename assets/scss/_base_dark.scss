@@ -33,16 +33,14 @@
     }
   }
 
-  code {
-    background-color: $alt-bg-color-dark;
-    color: $fg-color-dark;
+  pre code {
+    background-color: inherit;
+    color: inherit;
   }
 
-  pre {
-    code {
-      background-color: inherit;
-      color: inherit;
-    }
+  code {
+    background-color: $lighter-alt-bg-color-dark;
+    color: $fg-color-dark;
   }
 
   blockquote {
